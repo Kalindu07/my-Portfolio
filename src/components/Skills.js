@@ -6,7 +6,7 @@ export default function Skills() {
       title: "Frontend",
       skills: [
         { name: "React", level: 95 },
-        { name: "TypeScript", level: 60 },
+        { name: "TypeScript", level: 90 },
         { name: "Next.js", level: 88 },
         { name: "Tailwind CSS", level: 92 },
         { name: "JavaScript", level: 94 },
@@ -15,11 +15,11 @@ export default function Skills() {
     {
       title: "Backend",
       skills: [
-        { name: "Node.js", level: 80 },
+        { name: "Node.js", level: 85 },
         { name: "Python", level: 80 },
-        { name: "JAVA", level: 82 },
-        { name: "MongoDB", level: 75 },
-        { name: "SQL", level: 80 },
+        { name: "PostgreSQL", level: 82 },
+        { name: "MongoDB", level: 78 },
+        { name: "GraphQL", level: 75 },
       ],
     },
     {
@@ -27,7 +27,7 @@ export default function Skills() {
       skills: [
         { name: "Git", level: 90 },
         { name: "Docker", level: 75 },
-        { name: "AWS", level: 30 },
+        { name: "AWS", level: 70 },
         { name: "Figma", level: 85 },
         { name: "Jest", level: 80 },
       ],
@@ -59,20 +59,17 @@ export default function Skills() {
               </h3>
               <div className="space-y-4">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="group/skill">
-                    <div className="flex justify-between mb-2">
-                      <span className="text-gray-700 dark:text-gray-300 font-medium group-hover/skill:text-green-500 dark:group-hover/skill:text-green-400 transition-colors duration-300">
+                  <div key={skillIndex} className="group">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors duration-300">
                         {skill.name}
                       </span>
-                      <span className="text-gray-500 dark:text-gray-400">{skill.level}%</span>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">{skill.level}%</span>
                     </div>
-                    <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
+                    <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                       <div
-                        className="bg-green-500 dark:bg-green-400 h-2 rounded-full transition-all duration-2000 ease-out hover:bg-green-600 dark:hover:bg-green-300 animate-skill-bar"
-                        style={{
-                          width: `${skill.level}%`,
-                          animationDelay: `${categoryIndex * 200 + skillIndex * 100}ms`,
-                        }}
+                        className="bg-gradient-to-r from-green-500 to-emerald-500 h-2 rounded-full transition-all duration-1000 ease-out group-hover:from-green-400 group-hover:to-emerald-400"
+                        style={{ width: `${skill.level}%` }}
                       ></div>
                     </div>
                   </div>

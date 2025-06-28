@@ -27,7 +27,7 @@ export default function About() {
                 sharing knowledge with the developer community.
               </p>
 
-              <div className="grid grid-cols-3 gap-4 text-center">
+              <div className="grid grid-cols-3 gap-8">
                 <div className="group hover:scale-105 transition-transform duration-300">
                   <div className="text-3xl font-bold text-green-500 dark:text-green-400 group-hover:animate-pulse">
                     50+
@@ -50,34 +50,36 @@ export default function About() {
             </div>
           </ScrollAnimation>
 
-          <ScrollAnimation direction="right" delay={400} className="space-y-6">
-            <div className="flex items-start space-x-4 p-6 bg-green-50 dark:bg-gray-800 rounded-lg hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
-              <Code className="w-8 h-8 text-green-500 dark:text-green-400 mt-1 group-hover:scale-110 transition-transform duration-300" />
-              <div>
-                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Clean Code</h4>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Writing maintainable, scalable code that follows best practices and industry standards.
-                </p>
+          <ScrollAnimation direction="right" delay={400}>
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4 p-6 bg-green-50 dark:bg-gray-800 rounded-lg hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
+                <Code className="w-8 h-8 text-green-500 dark:text-green-400 mt-1 group-hover:scale-110 transition-transform duration-300" />
+                <div>
+                  <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Clean Code</h4>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Writing maintainable, scalable code that follows best practices and industry standards.
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="flex items-start space-x-4 p-6 bg-purple-50 dark:bg-gray-800 rounded-lg hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
-              <Palette className="w-8 h-8 text-purple-500 dark:text-purple-400 mt-1 group-hover:scale-110 transition-transform duration-300" />
-              <div>
-                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Design Thinking</h4>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Creating user-centered designs that are both beautiful and functional.
-                </p>
+              <div className="flex items-start space-x-4 p-6 bg-purple-50 dark:bg-gray-800 rounded-lg hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
+                <Palette className="w-8 h-8 text-purple-500 dark:text-purple-400 mt-1 group-hover:scale-110 transition-transform duration-300" />
+                <div>
+                  <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Design Thinking</h4>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Creating user-centered designs that are both beautiful and functional.
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="flex items-start space-x-4 p-6 bg-emerald-50 dark:bg-gray-800 rounded-lg hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
-              <Zap className="w-8 h-8 text-emerald-500 dark:text-emerald-400 mt-1 group-hover:scale-110 transition-transform duration-300" />
-              <div>
-                <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Performance</h4>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Optimizing applications for speed, accessibility, and user experience.
-                </p>
+              <div className="flex items-start space-x-4 p-6 bg-emerald-50 dark:bg-gray-800 rounded-lg hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
+                <Zap className="w-8 h-8 text-emerald-500 dark:text-emerald-400 mt-1 group-hover:scale-110 transition-transform duration-300" />
+                <div>
+                  <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Performance</h4>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    Optimizing applications for speed, accessibility, and user experience.
+                  </p>
+                </div>
               </div>
             </div>
           </ScrollAnimation>

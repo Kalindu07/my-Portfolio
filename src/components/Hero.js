@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import emailjs from 'emailjs-com';
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -63,7 +64,8 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-emerald-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </a>
               <a
-                href="#about"
+                href="/Kalindu Lakshan RavinayakaN.pdf"
+                download
                 className="border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden"
               >
                 <span className="relative z-10">My resume</span>
